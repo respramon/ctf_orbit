@@ -1,0 +1,22 @@
+# Path latihan pada satu origin; 20 entri.
+/
+/robots.txt
+/sitemap.xml
+/admin
+/login
+/dashboard
+/api
+/api/status
+/health
+/status
+/debug
+/about
+/help
+/hint
+/flag
+/assets/app.js
+/static/app.js
+/index.html
+/.well-known/security.txt
+/favicon.ico
+

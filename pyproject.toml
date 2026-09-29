@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctf-orbit"
+version = "1.0.0"
+description = "Toolkit otomasi dan triase CTF lintas kategori"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.optional-dependencies]
+image = ["Pillow>=12.2,<14"]
+crypto = ["pycryptodome>=3.23,<4"]
+reverse = ["capstone>=5.0.6,<6"]
+pwn = ["pwntools>=4.15,<5"]
+full = ["Pillow>=12.2,<14", "pycryptodome>=3.23,<4", "capstone>=5.0.6,<6", "pwntools>=4.15,<5"]
+dev = ["ruff>=0.12,<1", "build>=1.2,<2"]
+
+[project.scripts]
+ctf-orbit = "ctf_orbit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B"]
+

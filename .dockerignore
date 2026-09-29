@@ -1,0 +1,12 @@
+.git
+.venv
+venv
+.qa-venv
+__pycache__
+.ruff_cache
+*.egg-info
+reports
+challenges
+build
+dist
+
